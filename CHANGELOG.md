@@ -1,4 +1,8 @@
 # Changelog
 
+## [1.0.0] - 2021-06-24
+- Added update api
+- Stable build
+
 ## [0.1.0] - 2021-05-18
 - Initial commit

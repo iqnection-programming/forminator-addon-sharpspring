@@ -1,16 +1,32 @@
 <?php
 
-/*
-Plugin Name: SharpSpring Addon for Forminator
-Plugin URI: https://www.iqnection.com
-Description: Create leads in SharpSpring with Forminator submissions
-Version: 1.0.0
-Author: Mike Eckert
-*/
 
-define( 'FORMINATOR_ADDON_SHARPSPRING_VERSION', '1.0' );
+/**
+ * SharpSpring Addon for Forminator
+ *
+ * @package           ForminatorSharpSpring
+ * @author:           IQnection
+ * @copyright         2021 IQnection
+ * @license:          GPL-2.0-or-later
+ *
+ * @wordpress-plugin
+ * Plugin Name:       SharpSpring Addon for Forminator
+ * Description:       Create leads in SharpSpring with Forminator submissions
+ * Version:           1.0.0
+ * Requires at least: 5.3
+ * Requires PHP:      7.1
+ * Author:            IQnection
+ * Author URI:        https://www.iqnection.com
+ * License:           GPL v2 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain:       forminator-sharpspring
+ */
+
+define( 'FORMINATOR_ADDON_SHARPSPRING_VERSION', '1.0.0' );
 define( 'SHARPSPRING_TRACKING_COOKIE_NAME', '__ss_tk' );
 
+require_once(__DIR__.'/updates/check-requirements.php');
+require_once (__DIR__.'/updates/update.php');
 
 if (is_admin()) {
     add_filter('plugin_action_links_' . plugin_basename( __FILE__ ), 'sharpspring_manage_links', 10, 1);
