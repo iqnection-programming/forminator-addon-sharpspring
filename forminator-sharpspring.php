@@ -12,7 +12,7 @@
  * @wordpress-plugin
  * Plugin Name:       SharpSpring Addon for Forminator
  * Description:       Create leads in SharpSpring with Forminator submissions
- * Version:           1.0.0
+ * Version:           1.0.1
  * Requires at least: 5.3
  * Requires PHP:      7.1
  * Author:            IQnection
@@ -22,7 +22,7 @@
  * Text Domain:       forminator-sharpspring
  */
 
-define( 'FORMINATOR_ADDON_SHARPSPRING_VERSION', '1.0.0' );
+define( 'FORMINATOR_ADDON_SHARPSPRING_VERSION', '1.0.1' );
 define( 'SHARPSPRING_TRACKING_COOKIE_NAME', '__ss_tk' );
 
 require_once(__DIR__.'/updates/check-requirements.php');

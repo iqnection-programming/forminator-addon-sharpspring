@@ -136,7 +136,7 @@ final class Forminator_Addon_SharpSpring extends Forminator_Addon_Abstract {
 				throw new Forminator_Addon_SharpSpring_Exception( __( 'SharpSpring is not connected', 'forminator' ) );
 			}
 
-			$form_settings_instance = $this->get_addon_form_settings( $form_id );
+			$form_settings_instance = $this->get_addon_settings( $form_id, 'form' );
 			if ( ! $form_settings_instance instanceof Forminator_Addon_SharpSpring_Form_Settings ) {
 				throw new Forminator_Addon_SharpSpring_Exception( __( 'Invalid Form Settings of SharpSpring', 'forminator' ) );
 			}
